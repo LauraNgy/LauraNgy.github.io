@@ -221,4 +221,8 @@ p.hw {
       width: 90%;
       height: auto;
     }
+
+    .footer {
+      height: 10vh;
+    }
 }

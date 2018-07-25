@@ -263,4 +263,8 @@ section {
       overflow: scroll;
     }
 
+    .footer {
+      height: 10vh;
+    }
+
 }
