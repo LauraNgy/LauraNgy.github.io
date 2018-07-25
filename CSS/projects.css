@@ -1,0 +1,266 @@
+body {
+ margin: 0;
+ padding: 0;
+ height:auto;
+ max-width: 100%;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-areas: 'header'
+                        'main'
+                        'footer';
+  grid-template-rows: auto;
+}
+
+.header {
+  margin: 0;
+  padding: 0;
+  height: 7vh;
+  width:100vw;
+  grid-area: header;
+  display: inline-grid;
+  grid-template-areas: 'logo pr ab con';
+  grid-template-rows: 10vh;
+  background-color: AliceBlue;
+}
+
+.header a {
+  color: black;
+  text-decoration: none;
+}
+
+.header a:hover {
+  color: RoyalBlue;
+}
+
+.logo {
+  padding-left: 5vw;
+  padding-right: 50vw;
+  text-align: left;
+  grid-area: logo;
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+}
+
+.logoText {
+  font-size: 1.25rem;
+  font-family: 'Alex Brush';
+}
+
+.menu {
+  display: grid;
+}
+
+.menuItem {
+  padding-top: 2vh;
+  border-right: 5px solid white;
+  text-align: center;
+  font-family: 'Arial';
+  font-size: 1rem;
+}
+
+.pr {
+  grid-area: pr;
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.ab {
+  grid-area: ab;
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.con {
+  grid-area: con;
+  grid-column: 4 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.main {
+  margin: 0;
+  padding: 0;
+  height: 86vh;
+  grid-area: main;
+  overflow: scroll;
+}
+
+
+section {
+  height: 86vh;
+  overflow: hidden;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  width: 100vw;
+  display: grid;
+  grid-template-areas: 'title title title'
+                        'text text media';
+  grid-template-rows: 20vh 65vh;
+}
+
+.contTitle {
+  grid-area: title;
+  padding: 2vh 2vw;
+  font-family: 'Arial';
+}
+
+.contTitle h1 {
+  font-size: 3em;
+}
+
+.contText {
+  grid-area: text;
+  padding: 2vh 2vw;
+  height: 50vh;
+  overflow: hidden;
+  text-align: justify;
+  font-family: 'Arial';
+}
+
+.contText p {
+  font-size: 1.5em;
+}
+
+.contText a {
+  color: black;
+  text-decoration: none;
+}
+
+.contText a:hover {
+  color: RoyalBlue;
+}
+
+.contMedia {
+  grid-area: media;
+  padding: 2vh 4vw;
+  width: 30vw;
+  height:45vh;
+}
+
+.footer {
+  background-color: AliceBlue;
+  position: absolute;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  height:9vh;
+  width: 100%;
+  display: grid;
+  grid-area: footer;
+  grid-template-areas: 'cpr twt git lkd'
+}
+
+.cpr {
+  grid-area: cpr;
+  padding-right: 50vw;
+}
+
+.fab {
+  padding: 0vh 2vw;
+}
+
+.fa-twitter {
+  grid-area: twt;
+  grid-column: 2 / span 1;
+}
+
+.fa-github {
+  grid-area: git;
+  grid-column: 3 / span 1;
+}
+
+.fa-linkedin {
+  grid-area: lkd;
+  grid-column: 4 / span 1;
+}
+
+.socialMedia {
+  display: grid;
+  font-size: 1.5em;
+}
+
+.socialMedia a{
+  text-decoration: none;
+  color: DarkGray;
+}
+
+.socialMedia a:hover {
+  color: RoyalBlue;
+}
+
+
+.cpr p {
+  padding-top: 2vh;
+  padding-left: 1vw;
+  font-family: 'Arial';
+  font-size: 0.75rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    display: grid;
+    grid-template-areas: 'header'
+                          'main'
+                          'footer';
+    grid-template-rows: auto;
+  }
+  .header {
+    height:auto;
+    grid-area: header;
+    display: inline-grid;
+    grid-template-areas: 'logo'
+                          'pr'
+                          'ab'
+                          'con';
+    grid-template-rows: auto;
+  }
+    .logo {
+      text-align: center;
+      width: 100%;
+      grid-area: logo;
+      grid-row: 1 / span 1;
+      border-bottom: 5px solid white;
+      padding: 0;
+    }
+    .pr {
+      grid-area: pr;
+      grid-row: 2 / span 1;
+      border-style: none;
+    }
+    .ab {
+      grid-area: pr;
+      grid-row: 3 / span 1;
+      border-style: none;
+    }
+    .con {
+      grid-area: con;
+      grid-row: 4 / span 1;
+      border-style: none;
+    }
+    .content {
+      grid-template-areas: 'title media'
+                            'text text';
+      grid-template-rows: auto;
+    }
+    .contTitle {
+      grid-column: 1 / span 1;
+      font-size: 0.5em;
+    }
+    .contMedia {
+      grid-row: 1 / span 1;
+      width: 20vh;
+      height: 20vh;
+      padding: 4vh 2vw;
+    }
+    .contText {
+      grid-row: 2 / span 2;
+      width: 90%;
+      height: auto;
+      overflow: scroll;
+    }
+
+}
