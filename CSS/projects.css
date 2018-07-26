@@ -2,7 +2,7 @@ body {
  margin: 0;
  padding: 0;
  height:auto;
- max-width: 100%;
+ max-width: 99%;
 }
 
 .wrapper {
@@ -83,7 +83,7 @@ body {
   padding: 0;
   height: 86vh;
   grid-area: main;
-  overflow: scroll;
+  overflow: auto;
 }
 
 
@@ -106,7 +106,7 @@ section {
 .contTitle {
   grid-area: title;
   padding: 2vh 2vw;
-  font-family: 'Arial';
+  font-family: 'Alex Brush';
 }
 
 .contTitle h1 {
@@ -127,7 +127,7 @@ section {
 }
 
 .contText a {
-  color: black;
+  color: DarkGray;
   text-decoration: none;
 }
 
@@ -260,7 +260,7 @@ section {
       grid-row: 2 / span 2;
       width: 90%;
       height: auto;
-      overflow: scroll;
+      overflow: auto;
     }
 
     .footer {

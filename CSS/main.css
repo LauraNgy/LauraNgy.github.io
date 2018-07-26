@@ -2,7 +2,7 @@ body {
  margin: 0;
  padding: 0;
  height:auto;
- max-width: 100%
+ max-width: 99%;
 }
 
 .wrapper {
@@ -95,12 +95,12 @@ body {
 
 .contTitle {
   grid-area: title;
-  padding: 2vh 2vw;
-  font-family: 'Arial';
+  padding: 2vh 4vw;
+  font-family: 'Alex Brush';
 }
 
 .contTitle h1 {
-  font-size: 3em;
+  font-size: 4.5em;
 }
 
 .contText {
@@ -108,7 +108,7 @@ body {
   padding: 2vh 2vw;
   text-align: justify;
   font-family: 'Arial';
-  overflow: scroll;
+  overflow: auto;
 }
 
 .contText p {
@@ -116,7 +116,7 @@ body {
 }
 
 .contText a {
-  color: black;
+  color: DarkGray;
   text-decoration: none;
 }
 
@@ -130,6 +130,11 @@ body {
   width: 30vw;
   height:45vh;
 }
+
+.contText li {
+  font-size: 1.2em;
+}
+
 .footer {
   background-color: AliceBlue;
   position: absolute;
@@ -248,7 +253,7 @@ body {
       grid-row: 2 / span 2;
       width: 90%;
       height: auto;
-      overflow: scroll;
+      overflow: auto;
     }
 
     .footer {
