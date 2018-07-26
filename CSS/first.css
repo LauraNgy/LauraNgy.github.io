@@ -47,7 +47,7 @@ body {
   padding-top: 2vh;
   border-right: 5px solid white;
   text-align: center;
-  font-family: 'Arial';
+  font-family: 'Cabin';
   font-size: 1rem;
 }
 
@@ -156,7 +156,7 @@ p.hw {
 .cpr p {
   padding-top: 2vh;
   padding-left: 1vw;
-  font-family: 'Arial';
+  font-family: 'Cabin';
   font-size: 0.75rem;
 }
 
