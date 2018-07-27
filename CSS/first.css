@@ -85,7 +85,7 @@ body {
 }
 
 .content {
-  height: 84vh;
+  height: 80vh;
   width: auto;
   background-image: url("../Resources/bck.jpg");
   background-size: contain;
@@ -107,7 +107,7 @@ p.hw {
   background-color: AliceBlue;
   margin-bottom: 0;
   padding-bottom: 0;
-  height:9vh;
+  height:10vh;
   width: 100%;
   display: grid;
   grid-area: footer;
