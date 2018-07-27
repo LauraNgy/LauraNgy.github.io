@@ -90,6 +90,7 @@ body {
 
 section {
   height: 86vh;
+  width: auto;
   overflow: hidden;
   background-color: white;
   margin: 0;
