@@ -2,7 +2,7 @@ body {
  margin: 0;
  padding: 0;
  height:auto;
- max-width: 99%;
+ max-width: 100%;
 }
 
 .wrapper {
@@ -10,7 +10,7 @@ body {
   grid-template-areas: 'header'
                         'main'
                         'footer';
-  grid-template-rows: auto;
+  grid-template-rows: 10vh 80vh 10vh;
 }
 
 .header {
@@ -81,7 +81,8 @@ body {
 .main {
   margin: 0;
   padding: 0;
-  height: 86vh;
+  height: 84vh;
+  width: auto;
   grid-area: main;
   overflow: auto;
 }
